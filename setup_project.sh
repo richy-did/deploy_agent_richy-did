@@ -12,7 +12,7 @@ ARCHIVE_NAME=""
 # --------- TRAP FUNCTION -------------
 cleanup_on_interrupt() {
     echo ""
-    echo "⚠️  Script interrupted! Archiving current state..."
+    echo "Script interrupted! Archiving current state..."
 
     if [ -d "$BASE_DIR" ]; then
         tar -czf "${ARCHIVE_NAME}.tar.gz" "$BASE_DIR"
@@ -111,7 +111,7 @@ echo " Running environment health check..."
 if python3 --version &>/dev/null; then
     echo "Python3 is installed."
 else
-    echo "⚠️  Python3 is NOT installed."
+    echo "Python3 is NOT installed."
 fi
 
-echo "🎉 Project setup complete!"
+echo "Project setup complete!"
